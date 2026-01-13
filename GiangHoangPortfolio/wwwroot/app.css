@@ -11,9 +11,9 @@ body {
 
 .hero {
     min-height: 90vh;
-    padding: 6rem 4rem;
+    padding: 2rem 4rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .hero-text h2 {
@@ -94,28 +94,112 @@ body {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
 }
 
+/* Bestämmer layout size */
 .hero-layout {
     display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: 4rem;
-    min-height: 90vh;
-
-    /* MER LUFT */
-    padding: 6rem 8rem;
-
-    /* Centrera innehållet snyggt */
+    grid-template-columns: 220px 1fr;
+    gap: 3rem;
+    align-items: flex-start;
+    padding: 8rem 6rem 4rem;
     max-width: 1400px;
     margin: 0 auto;
-
-    align-items: center;
 }
 
 .profile-column {
-    width: 280px;
+    width: 220px;
     text-align: center;
+    margin-top: 0;
 }
 
 .hero-content {
     max-width: 1000px;
-    width: 100%;
+    width: 400%;
+    margin-top: 0;
+}
+
+.mud-main-content {
+    padding-top: 0 !important;
+}
+
+/* Youtube */
+
+.youtube-section {
+    padding: 4rem 2rem;
+}
+
+.youtube-section h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.youtube-description {
+    color: #9ca3af;
+    max-width: 600px;
+    margin-bottom: 3rem;
+}
+
+.youtube-card {
+    display: flex;
+    gap: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    max-width: 900px;
+    align-items: center;
+}
+
+.youtube-card img {
+    width: 280px;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.25);
+}
+
+.youtube-info h2 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.youtube-info p {
+    color: #9ca3af;
+    margin-bottom: 1.5rem;
+}
+
+.youtube-embed {
+    max-width: 1100px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(56, 189, 248, 0.25);
+    margin-top: 2rem;
+}
+
+.youtube-section {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.youtube-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.youtube-description {
+    color: #9ca3af;
+    margin-bottom: 2rem;
+}
+
+.youtube-embed {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 1.5rem;
+    overflow: hidden;
+
+    /* Tydligare ram */
+    border: 2px solid rgba(56, 189, 248, 0.6);
+
+    /* Starkare glow */
+    box-shadow:
+            0 0 60px rgba(56, 189, 248, 0.35),
+            0 0 20px rgba(56, 189, 248, 0.2);
 }
