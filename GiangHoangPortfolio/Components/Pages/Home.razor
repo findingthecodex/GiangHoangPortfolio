@@ -1,7 +1,45 @@
 ﻿@page "/"
+@using MudBlazor
 
-<PageTitle>Home</PageTitle>
+<div class="hero-layout">
 
-<h1>Hello, world!</h1>
+    <!-- Vänstersida: Profil -->
+    <div class="profile-column">
+        <div class="profile-card">
+            <img src="/images/IMG_92352.jpg" alt="Giang Hoang" />
+        </div>
+    </div>
 
-Welcome to your new app.
+    <!-- Högersida: Din text -->
+    <div class="hero-content">
+
+        <MudText Typo="Typo.h6" Color="Color.Secondary">
+            Hej mitt namn är
+        </MudText>
+
+        <MudText Typo="Typo.h3">
+            <b>Giang Hoang</b>
+        </MudText>
+
+        <MudText Typo="Typo.h2">
+            Systemutvecklare inom .NET
+        </MudText>
+
+        <MudText Class="mt-4">
+            Jag studerar systemutveckling och bygger moderna webbapplikationer med Blazor,
+            med fokus på backend och användarvänliga lösningar.
+        </MudText>
+
+        <MudStack Row="true" Spacing="3" Class="mt-6">
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large">
+                Kontakta mig
+            </MudButton>
+
+            <MudButton Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Large">
+                Se mitt CV
+            </MudButton>
+        </MudStack>
+
+    </div>
+
+</div>
