@@ -109,3 +109,13 @@ body {
 
     align-items: center;
 }
+
+.profile-column {
+    width: 280px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 1000px;
+    width: 100%;
+}
