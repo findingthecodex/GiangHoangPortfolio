@@ -61,6 +61,11 @@ body {
 }
 
 body {
+    max-width: 1200px; /* constrain body width */
+    max-height: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;      /* center page */
+    padding: 0 1rem;     /* page side padding */
     background: #020617 !important;
     color: #e5e7eb;
 }
