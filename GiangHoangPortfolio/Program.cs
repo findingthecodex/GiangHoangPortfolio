@@ -1,5 +1,6 @@
 using GiangHoangPortfolio.Components;
 using MudBlazor.Services;
+using System.Net.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddMudServices();
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddHttpClient("GitHub", client =>
+{
+    client.DefaultRequestHeaders.UserAgent.ParseAdd("GiangHoangPortfolio");
+});
 
 
 var app = builder.Build();
