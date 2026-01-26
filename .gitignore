@@ -52,3 +52,11 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# JetBrains / Rider: ignore Copilot migration files (explicit and pattern)
+/.idea/.idea.GiangHoangPortfolio/.idea/copilot.data.migration.agent.xml
+/.idea/.idea.GiangHoangPortfolio/.idea/copilot.data.migration.edit.xml
+
+# More general pattern to ignore any Copilot migration XMLs under .idea
+/.idea/**/copilot.data.migration.*.xml
+/.idea
